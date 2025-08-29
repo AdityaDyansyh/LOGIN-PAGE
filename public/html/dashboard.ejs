@@ -331,15 +331,35 @@
       cursor: not-allowed;
     }
 
+    /* Perbaikan untuk logo - ukuran dan posisi yang konsisten */
     .logo-container {
-      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
     }
 
     .logo-container img {
-      width: 230px;
-      height: 120px;
+      width: 180px;
+      height: 90px;
       object-fit: contain;
       filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    }
+
+    /* Penyesuaian layout info-content untuk logo yang konsisten */
+    .info-content.Login {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 0 40px 0 0;
+    }
+
+    .info-content.Register {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 0 0 40px;
     }
 
     /* Perbaikan untuk logo - hanya satu yang terlihat pada satu waktu */
@@ -359,6 +379,16 @@
     
     .container.active .info-content.Login .logo-container {
       opacity: 0;
+    }
+
+    /* Penyesuaian teks untuk keseimbangan visual */
+    .info-content h2 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .info-content p {
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -450,7 +480,7 @@
       <div class="logo-container">
         <img src="/game_title.png" alt="Game Title Name">
       </div>
-      <h2 class="animation" style="--D:0; --S:20">WELCOME BACK!</h2>
+      <h2 class="animation" style="--D:0; --S:20">WELCOME TO GROWTOPIA!</h2>
       <p class="animation" style="--li:18; --S:1">We're delighted to have you here. If you need any assistance, feel
         free to reach out.</p>
     </div>
