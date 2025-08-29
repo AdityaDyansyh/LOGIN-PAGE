@@ -335,7 +335,7 @@
     .logo-container {
       display: flex;
       justify-content: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem; /* Diperkecil dari 1.5rem */
     }
 
     .logo-container img {
@@ -383,12 +383,43 @@
 
     /* Penyesuaian teks untuk keseimbangan visual */
     .info-content h2 {
-      margin-bottom: 10px;
+      margin-bottom: 8px; /* Diperkecil dari 10px */
       font-size: 22px;
     }
 
     .info-content p {
       line-height: 1.4;
+    }
+
+    /* PERBAIKAN UTAMA: Menyesuaikan posisi form agar lebih ke atas */
+    .form-box.Login {
+      justify-content: flex-start;
+      padding-top: 20px; /* Ditambahkan untuk menggeser form ke atas */
+    }
+
+    .form-box.Register {
+      padding-top: 15px; /* Ditambahkan untuk menggeser form ke atas */
+    }
+
+    /* Mengurangi margin atas pada judul form */
+    .form-box h2 {
+      margin-top: 5px;
+      margin-bottom: 15px; /* Diperbesar untuk keseimbangan */
+    }
+
+    /* Mengurangi margin atas pada input box */
+    .form-box .input-box {
+      margin-top: 10px; /* Diperkecil dari 15px */
+    }
+
+    /* Mengurangi margin atas pada tombol */
+    .btn {
+      margin-top: 12px; /* Diperkecil dari 15px */
+    }
+
+    /* Mengurangi margin pada link register */
+    .regi-link {
+      margin: 5px 0 4px; /* Diperkecil dari 8px 0 4px */
     }
   </style>
 </head>
