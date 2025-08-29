@@ -90,7 +90,7 @@
     }
 
     .form-box h2 {
-      font-size: 24px;
+      font-size: 22px;
       text-align: center;
       margin-bottom: 5px;
     }
@@ -335,7 +335,10 @@
     .logo-container {
       display: flex;
       justify-content: center;
-      margin-bottom: 1rem; /* Diperkecil dari 1.5rem */
+      margin-bottom: 1rem;
+      /* Diperkecil dari 1.5rem */
+      margin-top: -20px;
+      /* Tambahkan ini untuk menggeser logo ke atas */
     }
 
     .logo-container img {
@@ -367,23 +370,24 @@
       opacity: 0;
       transition: opacity 0.5s ease;
     }
-    
+
     .container.active .info-content.Register .logo-container {
       opacity: 1;
     }
-    
+
     .info-content.Login .logo-container {
       opacity: 1;
       transition: opacity 0.5s ease;
     }
-    
+
     .container.active .info-content.Login .logo-container {
       opacity: 0;
     }
 
     /* Penyesuaian teks untuk keseimbangan visual */
     .info-content h2 {
-      margin-bottom: 8px; /* Diperkecil dari 10px */
+      margin-top: 0;
+      margin-bottom: 8px;
       font-size: 22px;
     }
 
@@ -394,32 +398,38 @@
     /* PERBAIKAN UTAMA: Menyesuaikan posisi form agar lebih ke atas */
     .form-box.Login {
       justify-content: flex-start;
-      padding-top: 20px; /* Ditambahkan untuk menggeser form ke atas */
+      padding-top: 20px;
+      /* Ditambahkan untuk menggeser form ke atas */
     }
 
     .form-box.Register {
-      padding-top: 15px; /* Ditambahkan untuk menggeser form ke atas */
+      padding-top: 15px;
+      /* Ditambahkan untuk menggeser form ke atas */
     }
 
     /* Mengurangi margin atas pada judul form */
     .form-box h2 {
       margin-top: 5px;
-      margin-bottom: 15px; /* Diperbesar untuk keseimbangan */
+      margin-bottom: 15px;
+      /* Diperbesar untuk keseimbangan */
     }
 
     /* Mengurangi margin atas pada input box */
     .form-box .input-box {
-      margin-top: 10px; /* Diperkecil dari 15px */
+      margin-top: 10px;
+      /* Diperkecil dari 15px */
     }
 
     /* Mengurangi margin atas pada tombol */
     .btn {
-      margin-top: 12px; /* Diperkecil dari 15px */
+      margin-top: 8px;
+      /* Diperkecil dari 15px */
     }
 
     /* Mengurangi margin pada link register */
     .regi-link {
-      margin: 5px 0 4px; /* Diperkecil dari 8px 0 4px */
+      margin: 2px 0 0;
+      /* Diperkecil dari 8px 0 4px */
     }
   </style>
 </head>
@@ -511,7 +521,7 @@
       <div class="logo-container">
         <img src="/game_title.png" alt="Game Title Name">
       </div>
-      <h2 class="animation" style="--D:0; --S:20">WELCOME TO GROWTOPIA!</h2>
+      <h2 class="animation" style="--D:0; --S:20">WELCOME!</h2>
       <p class="animation" style="--li:18; --S:1">We're delighted to have you here. If you need any assistance, feel
         free to reach out.</p>
     </div>
