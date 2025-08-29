@@ -388,80 +388,34 @@
 
     <!-- Login Form -->
     <div class="form-box Login">
-      <h2 class="animation" style="--D:0; --S:21">Login</h2>
+      <div class="logo-container animation" style="--D:0; --S:20">
+        <img src="/game_title.png" alt="Game Title Name">
+      </div>
+      <h2 class="animation" style="--D:1; --S:21">Login</h2>
       <form method="post" action="/player/growid/login/validate" id="loginForm">
         <input name="type" value="log" type="hidden" />
         <input name="_token" value="<%= JSON.stringify(data) %>" type="hidden" />
 
-        <div class="input-box animation" style="--D:1; --S:22">
+        <div class="input-box animation" style="--D:2; --S:22">
           <input type="text" name="growId" id="loginGrowId" required>
           <label for="loginGrowId">GrowID</label>
           <box-icon type='solid' name='user' color="gray"></box-icon>
           <div class="error-message" id="loginUsernameError"></div>
         </div>
 
-        <div class="input-box animation" style="--D:2; --S:23">
+        <div class="input-box animation" style="--D:3; --S:23">
           <input type="password" name="password" id="loginPassword" required>
           <label for="loginPassword">Password</label>
           <box-icon name='lock-alt' type='solid' color="gray"></box-icon>
           <div class="error-message" id="loginPasswordError"></div>
         </div>
 
-        <div class="animation" style="--D:3; --S:24">
+        <div class="animation" style="--D:4; --S:24">
           <button type="submit" id="loginButton" class="btn">Login</button>
         </div>
 
-        <div class="regi-link animation" style="--D:4; --S:25">
+        <div class="regi-link animation" style="--D:5; --S:25">
           <p>Don't have an account? <br> <a href="#" class="SignUpLink">Sign Up</a></p>
-        </div>
-      </form>
-    </div>
-
-    <!-- Login Form -->
-    <div class="form-box Login">
-      <div class="logo-container animation" style="--D:0; --S:20">
-        <img src="/game_title.png" alt="Game Title Name">
-      </div>
-      <h2 class="animation" style="--D:1; --S:21">Login</h2>
-      <form ...>
-        <!-- ... -->
-      </form>
-    </div>
-
-    <!-- Registration Form -->
-    <div class="form-box Register">
-      <h2 class="animation" style="--li:17; --S:0">Register</h2>
-      <form method="post" action="/player/growid/login/validate" id="regisForm">
-        <input name="type" value="reg" type="hidden" />
-        <input name="_token" value="<%= JSON.stringify(data) %>" type="hidden" />
-
-        <div class="input-box animation" style="--li:18; --S:1">
-          <input type="text" name="growId" id="regisGrowId" required>
-          <label for="regisGrowId">GrowID</label>
-          <box-icon type='solid' name='user' color="gray"></box-icon>
-          <div class="error-message" id="regisUsernameError"></div>
-        </div>
-
-        <div class="input-box animation" style="--li:19; --S:2">
-          <input type="email" name="email" id="regisEmail" required>
-          <label for="regisEmail">Email</label>
-          <box-icon name='envelope' type='solid' color="gray"></box-icon>
-          <div class="error-message" id="regisEmailError"></div>
-        </div>
-
-        <div class="input-box animation" style="--li:19; --S:3">
-          <input type="password" name="password" id="regisPassword" required>
-          <label for="regisPassword">Password</label>
-          <box-icon name='lock-alt' type='solid' color="gray"></box-icon>
-          <div class="error-message" id="regisPasswordError"></div>
-        </div>
-
-        <div class="animation" style="--li:20; --S:4">
-          <button type="submit" id="regisButton" class="btn">Register</button>
-        </div>
-
-        <div class="regi-link animation" style="--li:21; --S:5">
-          <p>Already have an account? <br> <a href="#" class="SignInLink">Sign In</a></p>
         </div>
       </form>
     </div>
@@ -472,8 +426,38 @@
         <img src="/game_title.png" alt="Game Title Name">
       </div>
       <h2 class="animation" style="--li:17; --S:1">Register</h2>
-      <form ...>
-        <!-- ... -->
+      <form method="post" action="/player/growid/login/validate" id="regisForm">
+        <input name="type" value="reg" type="hidden" />
+        <input name="_token" value="<%= JSON.stringify(data) %>" type="hidden" />
+
+        <div class="input-box animation" style="--li:18; --S:2">
+          <input type="text" name="growId" id="regisGrowId" required>
+          <label for="regisGrowId">GrowID</label>
+          <box-icon type='solid' name='user' color="gray"></box-icon>
+          <div class="error-message" id="regisUsernameError"></div>
+        </div>
+
+        <div class="input-box animation" style="--li:19; --S:3">
+          <input type="email" name="email" id="regisEmail" required>
+          <label for="regisEmail">Email</label>
+          <box-icon name='envelope' type='solid' color="gray"></box-icon>
+          <div class="error-message" id="regisEmailError"></div>
+        </div>
+
+        <div class="input-box animation" style="--li:20; --S:4">
+          <input type="password" name="password" id="regisPassword" required>
+          <label for="regisPassword">Password</label>
+          <box-icon name='lock-alt' type='solid' color="gray"></box-icon>
+          <div class="error-message" id="regisPasswordError"></div>
+        </div>
+
+        <div class="animation" style="--li:21; --S:5">
+          <button type="submit" id="regisButton" class="btn">Register</button>
+        </div>
+
+        <div class="regi-link animation" style="--li:22; --S:6">
+          <p>Already have an account? <br> <a href="#" class="SignInLink">Sign In</a></p>
+        </div>
       </form>
     </div>
   </div>
