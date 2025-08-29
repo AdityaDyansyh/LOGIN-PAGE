@@ -363,14 +363,20 @@
 
     /* Tambahkan di bagian style */
     .logo-container {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
     }
 
     .logo-container img {
-      width: 230px;
-      height: 120px;
+      max-width: 200px;
+      width: 100%;
+      height: auto;
       object-fit: contain;
       filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+      display: block;
     }
   </style>
 </head>
@@ -411,13 +417,15 @@
       </form>
     </div>
 
-    <div class="info-content Login">
-      <div class="logo-container">
+    <!-- Login Form -->
+    <div class="form-box Login">
+      <div class="logo-container animation" style="--D:0; --S:20">
         <img src="/game_title.png" alt="Game Title Name">
       </div>
-      <h2 class="animation" style="--D:0; --S:20">WELCOME BACK!</h2>
-      <p class="animation" style="--D:1; --S:21">We are happy to have you with us again. If you need anything, we are
-        here to help.</p>
+      <h2 class="animation" style="--D:1; --S:21">Login</h2>
+      <form ...>
+        <!-- ... -->
+      </form>
     </div>
 
     <!-- Registration Form -->
@@ -458,13 +466,15 @@
       </form>
     </div>
 
-    <div class="info-content Register">
-      <div class="logo-container">
+    <!-- Registration Form -->
+    <div class="form-box Register">
+      <div class="logo-container animation" style="--li:16; --S:0">
         <img src="/game_title.png" alt="Game Title Name">
       </div>
-      <h2 class="animation" style="--D:0; --S:20">WELCOME BACK!</h2>
-      <p class="animation" style="--li:18; --S:1">We're delighted to have you here. If you need any assistance, feel
-        free to reach out.</p>
+      <h2 class="animation" style="--li:17; --S:1">Register</h2>
+      <form ...>
+        <!-- ... -->
+      </form>
     </div>
   </div>
 
