@@ -23,10 +23,7 @@
       align-items: center;
       min-height: 100vh;
       background: transparent;
-      background-image:
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%2325252b"/><path d="M0 0L100 100" stroke="%23333" stroke-width="2"/><path d="M100 0L0 100" stroke="%23333" stroke-width="2"/></svg>');
-      backdrop-filter: blur(5px);
+      /* Tetap transparan */
     }
 
     .container {
@@ -37,6 +34,8 @@
       box-shadow: 0 0 25px #e46033;
       overflow: hidden;
       border-radius: 15px;
+      /* Tambahkan background solid atau gradient di sini */
+      background: linear-gradient(135deg, #25252b 60%, #e46033 100%);
     }
 
     .container .form-box {
@@ -251,14 +250,22 @@
       transition-delay: calc(.1s * var(--li));
     }
 
+    .info-content .logo-container {
+      margin-bottom: 0.5rem;
+      /* dari 1rem, bisa dikurangi lagi jika perlu */
+    }
+
     .info-content h2 {
-      text-transform: uppercase;
-      font-size: 24px;
-      line-height: 1.2;
+      margin-top: 0;
+      margin-bottom: 4px;
+      /* lebih rapat ke logo */
+      font-size: 22px;
     }
 
     .info-content p {
+      margin-top: 0;
       font-size: 12px;
+      line-height: 1.4;
     }
 
     .container .curved-shape {
